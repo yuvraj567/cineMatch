@@ -1,0 +1,521 @@
+/* Main styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.stApp {
+    background-color: #f5f5f5;
+}
+
+/* Movie cards */
+.movie-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-poster {
+    flex: 0 0 250px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.movie-meta {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.plot {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.awards {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ff4b4b;
+    font-weight: bold;
+}
+
+/* Recommendation header */
+.recommendation-header {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+/* About page styles */
+.about-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Contact page styles */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #ff4b4b;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ff4b4b;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #ff4b4b;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .movie-card {
+        flex-direction: column;
+    }
+    
+    .movie-poster {
+        flex: 0 0 300px;
+    }
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Feature Cards */
+.intro-container {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.intro-title {
+    color: #6e48aa;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.feature-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: #6e48aa;
+}
+
+.feature-text h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.feature-text p {
+    color: #666;
+    margin: 0;
+}
+
+/* Stats Card */
+.stats-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.stats-card h3 {
+    color: #6e48aa;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.stat-item {
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6e48aa;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #555;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.testimonial-author {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.search-section h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.search-section p {
+    color: #666;
+}
+
+.search-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+/* Recommendation Header */
+.recommendation-header {
+    margin: 2rem 0;
+}
+
+.selected-movie-banner {
+    background: #f0f2f6;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.selected-movie-banner h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #6e48aa;
+    font-weight: bold;
+}
+
+.analysis-factors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.factor-tag {
+    background: #6e48aa;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* Recommendation Cards */
+.recommendation-poster {
+    text-align: center;
+}
+
+.recommendation-poster img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+}
+
+.movie-quickfacts {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.recommendation-details h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.year {
+    color: #666;
+    font-weight: normal;
+}
+
+.ratings-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.rating-pill {
+    background: #f0f2f6;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.rating-pill.imdb {
+    background: #f5c518;
+    color: #000;
+    font-weight: bold;
+}
+
+.rating-source {
+    margin-right: 0.3rem;
+}
+
+.plot-section {
+    margin: 1.5rem 0;
+}
+
+.plot-section h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.plot-text {
+    color: #555;
+    line-height: 1.6;
+}
+
+.credits-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.credit-col h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.credit-col p {
+    color: #555;
+    margin: 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.stream-button, .trailer-button, .similar-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.stream-button {
+    background: #6e48aa;
+    color: white;
+}
+
+.trailer-button {
+    background: #ff4757;
+    color: white;
+}
+
+.similar-button {
+    background: #f0f2f6;
+    color: #333;
+}
+
+.stream-button:hover, .trailer-button:hover, .similar-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer Section */
+.footer-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.footer-section h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.discovery-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.discovery-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.discovery-card:hover {
+    transform: translateY(-5px);
+}
+
+.discovery-card h4 {
+    color: #6e48aa;
+    margin-bottom: 0.5rem;
+}
+
+.discovery-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.newsletter-signup {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-signup h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-signup p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.signup-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup-form input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    background: #6e48aa;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+    background: #5d3a9b;
+}
